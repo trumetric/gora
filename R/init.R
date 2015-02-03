@@ -1,7 +1,7 @@
 # class constructor:
 rga.open <- function(instance = "ga",
-                     client.id = "862341168163-qtefv92ckvn2gveav66im725c3gqj728.apps.googleusercontent.com",
-                     client.secret = "4CLMnYSN0svvaEXeybygHslJ",
+                     client.id = "583811151505-bljlfanod0uuhpjrg17tvm9rsqomb017.apps.googleusercontent.com",
+                     client.secret = "FPnFtNQIYVMheq-cSJLeERlX ",
                      where, envir = .GlobalEnv) {
 
     if (exists(instance, where = envir)) {
