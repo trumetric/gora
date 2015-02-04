@@ -1,8 +1,8 @@
 .rga.getToken <- function(client.id, client.secret) {
     if (interactive()) {
-        redirect.uri <- "urn:ietf:wg:oauth:2.0:oob"
+        redirect.uri <- "https%3A%2F%2Ftrumetric.me%2Fdashboard%2Fauthgo"
         url <- paste("https://accounts.google.com/o/oauth2/auth?",
-                     "scope=https://www.googleapis.com/auth/analytics.readonly&",
+                     "scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics%20https%3A%2F%2Fadwords.google.com%2Fapi%2Fadwords%2F&",
                      "state=%2Fprofile&", "redirect_uri=", redirect.uri, "&",
                      "response_type=code&",
                      "client_id=", client.id, "&",
