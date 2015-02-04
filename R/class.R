@@ -28,7 +28,7 @@ rga <- setRefClass("rga",
                        isTokenExpired = function() {
                            if (.self$isToken()) {
                                if (.self$tokenExpiresIn() <= 0) {
-                                   return(TRUE)
+                                   return(FALSE)
                                } else {
                                    return(FALSE)
                                }
